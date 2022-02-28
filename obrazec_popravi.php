@@ -20,7 +20,6 @@
     };
     $con=mysqli_connect("localhost","root","","uporabniki");
     mysqli_query($con,"SET NAMES UTF8");
-    #$sql="INSERT INTO ime_priimek (ime,priimek) VALUES ('$ime','$priimek')";
     $sql="UPDATE ime_priimek SET ime='$ime',priimek='$priimek' WHERE id='$id'";
     mysqli_query($con,$sql);
     mysqli_close($con);
